@@ -2,7 +2,7 @@
 This is a rick and morty app that contains a lot of information from the movie (Characters, Episodes, and locations).
 
 # Contributing
-Anybody can contribute to this program. Fork the repo, Clone it, and make your changes. Create a pull request when you're done and i'll review the changes.
+This app was built using [React](https://reactjs.org) and [Redux](https://redux.js.org/). Anybody can contribute to this program. Fork the repo, Clone it, and make your changes. Create a pull request when you're done and i'll review the changes.
 
 # How to run
 Running the app locally to make changes: 
