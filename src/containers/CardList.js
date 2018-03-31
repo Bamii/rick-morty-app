@@ -34,8 +34,6 @@ class CardList extends Component {
 			season3 = array2.filter((item) => {
 				return item.episode.charAt(2) == 3;
 			})
-			console.log(array2);
-			console.log(season3);
 		}
 
 		return (

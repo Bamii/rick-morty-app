@@ -56,7 +56,6 @@ class Locations extends Component {
 	}
 
 	clickedPage(props) {
-		console.log(props);
 		this.setState({ highlighted: props });
 		this.props.getLocations(props);
 		this.forceUpdate();

@@ -26,7 +26,6 @@ class Episodes extends Component {
 
 	onChangeSearchTerm(event) {
 		this.setState({ term: event.target.value });
-		console.log(this.props.episodes);
 	}
 
 	submitSearch(event) {

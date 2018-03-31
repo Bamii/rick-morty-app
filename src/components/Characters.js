@@ -57,7 +57,6 @@ class Characters extends Component {
 	}
 
 	clickedPage(props) {
-		console.log(props);
 		this.setState({ highlighted: props });
 		this.props.getCharacters(props);
 		this.forceUpdate();
@@ -69,7 +68,6 @@ class Characters extends Component {
 			tempPageNumber = Array.apply(null, { length: this.props.characters[0].info.pages }).map(Number.call, Number);
 			pageNumber = tempPageNumber.map(item => item + 1)
 		}
-		console.log(pageNumber);
 		return (
 			<Container className="contanier-fluid">
 				<Search
