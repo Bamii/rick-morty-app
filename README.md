@@ -7,7 +7,7 @@ Anybody can contribute to this program. Fork the repo, Clone it, and make your c
 # How to run
 Running the app locally to make changes: 
 ```
-git clone 
+git clone https://github.com/Bamii/rick-morty-app.git
 npm install
 npm start
 ```
