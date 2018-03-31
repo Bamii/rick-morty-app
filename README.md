@@ -11,7 +11,7 @@ git clone
 npm install
 npm start
 ```
-The app is also hosted on [Heroku]() ENJOY!
+The app is also hosted on [Heroku](https://ricknmorty.herokuapp.com/) ENJOY!
 
 ## TODO
 - Fix the 'Click for more details' function of the app
