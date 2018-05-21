@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
     background: white;
-    min-height: calc(100vh - 150px);
+    min-height: calc(100vh - 200px);
 `;
 
 export const NavigationContainer = styled.div`

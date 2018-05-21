@@ -9,11 +9,9 @@ const Container = styled.div`
 	justify-content: space-around;
 	width: 200px;
 	height: 300px;
-	border: 1px solid rgb(218, 216, 216);
-	box-shadow: 0 2px 1px grey;
+	box-shadow: inset 0 0 18px 1px #e3e7ed;
 	margin-left: 10px;
 	margin-bottom: 10px;
-	border-radius: 5px;
 	font-size: small;
 	padding: 10px;
 	box-sizing: border-box;

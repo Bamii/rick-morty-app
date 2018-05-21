@@ -33,7 +33,7 @@ class Characters extends Component {
 		}, false);
 	}
 
-	componentWullUnmount() {
+	componentWillUnmount() {
 		window.removeEventListener('keypress', (event) => {
 			if (event.keyCode == 13) {
 				const click = document.getElementById('next-level');

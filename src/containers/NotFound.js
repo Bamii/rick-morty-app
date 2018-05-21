@@ -28,9 +28,7 @@ class NotFound extends Component {
     render() {
         return (
             <Container2>
-                <img src="./assets/not_found.png" alt="Rick"/>
-                <h2>Oops! Seems like you've hit a dead end</h2>
-                <h4>Try using the navigation bar at the top of the page.</h4>
+                <img src="http://res.cloudinary.com/bambam/image/upload/v1526900432/404.png" alt="Rick"/>
             </Container2>
         );
     }

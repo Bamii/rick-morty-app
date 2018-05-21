@@ -6,6 +6,10 @@ const Link2 = styled(Link) `
 	z-index: 10;
 `;
 
+const Form = styled.form`
+	padding: 0 10px;
+`;
+
 class Search extends Component {
 	/*
 	---------------
@@ -19,7 +23,7 @@ class Search extends Component {
 
 	render() {
 		return (
-			<form onSubmit={this.props.submitSearch} className="input-group">
+			<Form onSubmit={this.props.submitSearch} className="input-group">
 				<input
 					placeholder={`Search ${this.props.searchName}`}
 					className="form-control"
@@ -36,7 +40,7 @@ class Search extends Component {
 							</Link>
 						</button>
 				</span>
-			</form>
+			</Form>
 		);
 	}
 }

@@ -37,11 +37,6 @@ class Episodes extends Component {
 	render() {
 		return (
 			<Container className="contanier-fluid">
-				<Search
-					searchName="Episodes (By Name)"
-					searchTerm={this.state.term}
-					onChangeSearchTerm={this.onChangeSearchTerm}
-					submitSearch={this.submitSearch} />
 
 				{this.props.episodes.length > 0 ?
 					<CardList type="episode" items={this.props.episodes} />

@@ -23,15 +23,15 @@ const createStoreWithMiddleware = applyMiddleware(promise)(createStore);
 ReactDOM.render(
 	<Provider store={createStoreWithMiddleware(reducers)}>
 		<BrowserRouter>
-			<div className="container" style={{ padding: 0 }}>
+			<div style={{ padding: 0 }}>
 				<Header> Rick and Morty </Header>
 				<Switch>
-					<Route exact path="/" component={Home} />
 					<Route path="/characters" component={Characters} />
 					<Route path="/episodes" component={Episodes} />
 					<Route path="/locations" component={Locations} />
 					<Route path="/search" component={SearchResults} />
 					<Route path="/about" component={About} />
+					<Route exact path="/" component={Home} />
 					<Route component={NotFound} />
 				</Switch>
 				<Footer />

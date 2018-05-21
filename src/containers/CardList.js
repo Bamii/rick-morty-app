@@ -13,7 +13,7 @@ const Season = styled.div`
 	height: 30px;
 	border-bottom: 1px solid grey;
 	font-size: large;
-	margin: 20px 0;
+	margin: 20px 10px;
 `;
 
 class CardList extends Component {
