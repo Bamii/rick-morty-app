@@ -28,7 +28,7 @@ class NotFound extends Component {
     render() {
         return (
             <Container2>
-                <img src="http://res.cloudinary.com/bambam/image/upload/v1526900432/404.png" alt="Rick"/>
+                <img src="http://res.cloudinary.com/bambam/image/upload/v1526900432/404.png" alt="404 Not Found. (Rick And Morty)"/>
             </Container2>
         );
     }

@@ -3,11 +3,21 @@ import styled from 'styled-components';
 export const Container = styled.div`
     background: white;
     min-height: calc(100vh - 200px);
+    padding: 0 30px;
+
+    @media (max-width: 590px) {
+        min-height: calc(100vh - 200px);
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    @media (max-width: 360px) {
+        min-height: calc(100vh - 220px);
+    }
 `;
 
 export const NavigationContainer = styled.div`
     height: 100%;
-    width: 50%;
     display: flex;
     justify-content: space-around;
     align-items: center;

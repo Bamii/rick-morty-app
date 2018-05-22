@@ -4,7 +4,9 @@ import { Container } from "./PageContainer";
 import PageBlock from './PageBlock';
 
 const Container2 = styled(Container) `
-    min-height: 60px;
+	min-height: 60px;
+	width: 80vw;
+	flex-wrap: wrap;
     margin: 0 auto;
     display: flex;
     justify-content: center;
@@ -17,12 +19,14 @@ class PaginationList extends Component {
 			<Container2>
 				{this.props.items.map((item) => {
 					return (
-						<PageBlock
-							highlighted={this.props.highlighted}
-							key={this.props.items.indexOf(item)}
-							item={item}
-							current={this.props.items.indexOf(item) + 1}
-							clickedPage={this.props.clickedPage}/>
+						<div>
+							<PageBlock
+								highlighted={this.props.highlighted}
+								key={this.props.items.indexOf(item)}
+								item={item}
+								current={this.props.items.indexOf(item) + 1}
+								clickedPage={this.props.clickedPage}/>
+						</div>
 					);
 				})}
 			</Container2>

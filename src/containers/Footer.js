@@ -10,6 +10,13 @@ const Container = styled.div`
     background: white;
     padding: 0 30px;
     box-shadow: 0 -1px 20px #eaedf2;
+
+    @media (max-width: 360px) {
+        height: 100px;
+        flex-direction: column;
+        justify-content: space-around;
+        padding-top: 10px;
+    }
 `;
 
 const Social = styled.div`
@@ -49,10 +56,10 @@ class Footer extends Component {
             <Container>
                 <div>Bami 2018 &copy;</div>
                 <Social>
-                    <a href="https://twitter.com/bbamii_"><i class="fab fa-twitter"></i></a>
-                    <a href="http://www.linkedin.com/in/bbamii"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="mailto:bbamii@outlook.com"><i class="fas fa-at"></i></a>
-                    <a href="https://bamii.github.io"><i class="fas fa-globe"></i></a>
+                    <a href="https://twitter.com/bbamii_"><i className="fab fa-twitter"></i></a>
+                    <a href="http://www.linkedin.com/in/bbamii"><i className="fab fa-linkedin-in"></i></a>
+                    <a href="mailto:bbamii@outlook.com"><i className="fas fa-at"></i></a>
+                    <a href="https://bamii.github.io"><i className="fas fa-globe"></i></a>
                 </Social>
             </Container>
         );

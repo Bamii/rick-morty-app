@@ -15,10 +15,12 @@ class Locations extends Component {
 		this.state = {
 			term: "",
 			highlighted: 1,
+			width: window.innerWidth,
 		};
 
 		this.submitSearch = this.submitSearch.bind(this);
 		this.clickedPage = this.clickedPage.bind(this);
+		this.handleWindowSizeChange = this.handleWindowSizeChange.bind(this);
 		this.onChangeSearchTerm = this.onChangeSearchTerm.bind(this);
 	}
 
@@ -30,6 +32,7 @@ class Locations extends Component {
 				click.click();
 			}
 		}, false);
+		window.addEventListener('resize', this.handleWindowSizeChange);
 	}
 
 	componentWullUnmount() {
@@ -40,10 +43,15 @@ class Locations extends Component {
 				click.click();
 			}
 		}, false);
+		window.removeEventListener('resize', this.handleWindowSizeChange);
 	}
 
 	componentDidMount() {
 		this.props.getLocations();
+	}
+
+	handleWindowSizeChange() {
+		this.setState({ width: window.innerWidth });
 	}
 
 	onChangeSearchTerm(event) {
@@ -82,6 +90,7 @@ class Locations extends Component {
 				{this.props.locations.length > 0 ?
 					<PaginationList
 						items={pageNumber}
+						width={this.state.width}
 						highlighted={this.state.highlighted}
 						clickedPage={this.clickedPage} />
 					: null}

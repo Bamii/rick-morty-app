@@ -5,7 +5,8 @@ const Block = styled.div`
     width: 25px;
     height: 25px;
     border: 1px solid grey;
-    border-radius: 5px;
+	border-radius: 5px;
+	margin-top: 10px;
     display: flex;
     justify-content: center;
     align-items: center;

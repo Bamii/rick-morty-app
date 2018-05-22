@@ -16,16 +16,26 @@ class Episodes extends Component {
 		};
 
 		this.submitSearch = this.submitSearch.bind(this);
+		this.handleWindowSizeChange = this.handleWindowSizeChange.bind(this);
 		this.onChangeSearchTerm = this.onChangeSearchTerm.bind(this);
 	}
 
 	componentDidMount() {
 		this.props.getEpisodes();
 		this.props.getEpisodes(2);
+		window.addEventListener('resize', this.handleWindowSizeChange);
+	}
+
+	componentWillUnmount() {
+		window.removeEventListener('resize', this.handleWindowSizeChange);
 	}
 
 	onChangeSearchTerm(event) {
 		this.setState({ term: event.target.value });
+	}
+
+	handleWindowSizeChange() {
+		this.setState({ width: window.innerWidth });
 	}
 
 	submitSearch(event) {

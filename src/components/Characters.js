@@ -16,10 +16,12 @@ class Characters extends Component {
 			term: "",
 			highlighted: 1,
 			items: null,
+			width: window.innerWidth,
 		};
 
 		this.submitSearch = this.submitSearch.bind(this);
 		this.clickedPage = this.clickedPage.bind(this);
+		this.handleWindowSizeChange = this.handleWindowSizeChange.bind(this);
 		this.onChangeSearchTerm = this.onChangeSearchTerm.bind(this);
 	}
 
@@ -31,6 +33,7 @@ class Characters extends Component {
 				click.click();
 			}
 		}, false);
+		window.addEventListener('resize', this.handleWindowSizeChange);
 	}
 
 	componentWillUnmount() {
@@ -41,6 +44,11 @@ class Characters extends Component {
 				click.click();
 			}
 		}, false);
+		window.removeEventListener('resize', this.handleWindowSizeChange);
+	}
+
+	handleWindowSizeChange() {
+		this.setState({ width: window.innerWidth });
 	}
 
 	componentDidMount() {
@@ -83,6 +91,7 @@ class Characters extends Component {
 				{this.props.characters.length > 0 ?
 					<PaginationList
 						items={pageNumber}
+						width={this.state.width}
 						highlighted={this.state.highlighted}
 						clickedPage={this.clickedPage} />
 					: null}
