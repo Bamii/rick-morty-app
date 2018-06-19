@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { NavigationContainer } from './PageContainer';
 import { FaBars, FaTimesCircle } from 'react-icons/lib/fa';
 import { Container, Img, Hamburger, Cancel, Modal } from './assets/styles';
+import portal from './assets/portal.png';
 
 class Header extends Component {
 
@@ -54,7 +55,7 @@ class Header extends Component {
 						<Hamburger onClick={this.navHandler}> <FaTimesCircle /> </Hamburger>}
 
 					{this.state.modal &&
-						<Modal>
+						<Modal style={{ background: `url(${portal})`, backgroundRepeat: 'round' }}>
 							{/* <Cancel onClick={this.navHandler}> <FaTimesCircle /> </Cancel> */}
 							<div>
 								<hr />

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Container } from './PageContainer';
 import styled from 'styled-components';
+import rick from './assets/not_found.png';
 
 const Container2 = styled(Container)`
     display: flex;
@@ -28,7 +29,8 @@ class NotFound extends Component {
     render() {
         return (
             <Container2>
-                <img src="http://res.cloudinary.com/bambam/image/upload/v1526900432/404.png" alt="404 Not Found. (Rick And Morty)"/>
+                {/* <img src="http://res.cloudinary.com/bambam/image/upload/v1526900432/404.png" alt="404 Not Found. (Rick And Morty)"/> */}
+                <img src={rick} alt="404 Not FOund (Rick and Morty Drowning in a portal)"/>
             </Container2>
         );
     }

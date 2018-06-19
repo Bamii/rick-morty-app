@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import portal from './portal.png';
 
 export const Container = styled.div`
 	height: 90px;
@@ -46,7 +47,6 @@ export const Modal = styled.div`
 	left: 0;
 	height: 100vh;
 	width: 100vw;
-	background: url('http://res.cloudinary.com/bambam/image/upload/v1526930291/portal.png');
 	background-repeat: round;
 	color: white;
 	z-index: 100;
