@@ -1,3 +1,4 @@
+[![style: styled-components](https://img.shields.io/badge/style-%F0%9F%92%85%20styled--components-orange.svg?colorB=daa357&colorA=db748e)](https://github.com/styled-components/styled-components)
 # Rick And Morty App
 This is a rick and morty app that contains a lot of information from the movie (Characters, Episodes, and locations).
 
@@ -20,5 +21,3 @@ The app is also hosted on [Heroku](https://ricknmorty.herokuapp.com/) ENJOY!
 This cannot go without saying thanks to [Afuh](https://github.com/afuh/rick-and-morty-api) for making this api available on [Rick and Morty API](https://rickandmortyapi.com/). 
 
 Cheers! Bami &copy;
-
-[![style: styled-components](https://img.shields.io/badge/style-%F0%9F%92%85%20styled--components-orange.svg?colorB=daa357&colorA=db748e)](https://github.com/styled-components/styled-components)
