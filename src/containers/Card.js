@@ -9,15 +9,16 @@ const Container = styled.div`
 	justify-content: space-around;
 	width: 200px;
 	height: 300px;
-	box-shadow: inset 0 0 18px 1px #e3e7ed;
+	box-shadow: -4px 4px 12px 0px darkgrey;
+    border-radius: 10px;
+    padding: 30px;
 	margin-left: 10px;
 	margin-bottom: 10px;
 	font-size: small;
-	padding: 10px;
 	box-sizing: border-box;
 
 	:hover {
-		background: rgb(218, 216, 216);
+		border: 2px solid darkseagreen;
 	}
 `;
 
