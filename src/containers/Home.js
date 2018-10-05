@@ -1,31 +1,27 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import { Container } from '../containers/PageContainer';
+import HomePic from '../img/homepage.png';
 import './assets/Home.css';
 
-const Happy = styled.div`
-  margin-top: 50px;
-  width: 100%;
-  height: 40px;
+const Pic = styled.img`
+  margin-top: 10px;
+  width: auto;
+  height: calc(100vh - 200px);
+`;
+
+const ContainerMod = styled(Container)`
   display: flex;
   justify-content: center;
   align-items: center;
 `;
 
-class Home extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-
-    };
-  }
-  
+class Home extends Component {  
   render() {
     return (
-      <Container>
-        
-      </Container>
+      <ContainerMod>
+        <Pic src={HomePic} alt="Rick and Morty"/>
+      </ContainerMod>
     );
   }
 }

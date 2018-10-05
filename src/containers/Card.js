@@ -16,6 +16,7 @@ const Container = styled.div`
 	margin-bottom: 10px;
 	font-size: small;
 	box-sizing: border-box;
+	cursor: pointer;
 
 	:hover {
 		border: 2px solid darkseagreen;
@@ -25,6 +26,7 @@ const Container = styled.div`
 const Container2 = styled(Container)`
 	width: 300px;
 	height: 150px;
+	cursor: pointer;
 `;
 
 const ImageContainer = styled.div`
