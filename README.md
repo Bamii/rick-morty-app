@@ -8,9 +8,10 @@ This app was built using [React](https://reactjs.org) and [Redux](https://redux.
 # How to run
 Running the app locally to make changes: 
 ```
-git clone https://github.com/Bamii/rick-morty-app.git
-npm install
-npm start
+$ git clone https://github.com/Bamii/rick-morty-app.git
+$ cd rick-morty-app
+$ npm install
+$ npm start
 ```
 The app is also hosted on [Heroku](https://ricknmorty.herokuapp.com/) ENJOY!
 
